@@ -10,7 +10,7 @@ smoothiefroot_response = requests.get("https://my.smoothiefroot.com/api/fruit/wa
 st_df = st.dataframe(data=smoothiefroot_response.json(), use_container_width=True)
 
 # Write directly to the app
-st.title("My Parents new healthy Diner")
+st.title("My Parents new Healthy Diner")
 st.write(
   """
   Choose the fruits you want in your custom smoothie!
