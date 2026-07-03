@@ -4,6 +4,7 @@ import streamlit as st
 from snowflake.snowpark.functions import col, when_matched
 import requests
 
+# New section to display smoothiefront nutrition information
 smoothiefroot_response = requests.get("https://my.smoothiefroot.com/api/fruit/watermelon")
 st.text(smoothiefroot_response.json())
 
