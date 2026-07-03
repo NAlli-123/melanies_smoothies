@@ -6,7 +6,8 @@ import requests
 
 # New section to display smoothiefront nutrition information
 smoothiefroot_response = requests.get("https://my.smoothiefroot.com/api/fruit/watermelon")
-st.text(smoothiefroot_response.json())
+# st.text(smoothiefroot_response.json())
+st_df = st.dataframe(data=smoothiefroot_response.json(), use_container_width=True)
 
 # Write directly to the app
 st.title("My Parents new healthy Diner")
