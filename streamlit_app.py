@@ -5,7 +5,7 @@ from snowflake.snowpark.functions import col, when_matched
 import requests
 
 smoothiefroot_response = requests.get("https://my.smoothiefroot.com/api/fruit/watermelon")
-st.text(smoothiefroot_response.json()
+st.text(smoothiefroot_response.json())
 
 # Write directly to the app
 st.title("My Parents new healthy Diner")
